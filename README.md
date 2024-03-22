@@ -1,7 +1,5 @@
 # Recipes Study
 
-
-
 ## Introduction
 
 Our investigation revolves around the intriguing question: What common features are associated with the highest-rated recipes? This question seeks to explore various aspects of recipes, such as the number of ingredients, preparation time, nutritional values, and specific ingredients, to determine their impact on a recipe's rating.
@@ -42,18 +40,15 @@ In summary, adopting a 90% significance level allows us to discern a subtle patt
 ## Hypothesis Testing
 Null Hypothesis (H0): There is no correlation between the preparation time (minutes) and the calorie content (calories) of recipes.
 Alternative Hypothesis (H1): There is a significant correlation between the preparation time (minutes) and the calorie content (calories) of recipes.
-Permutation Test:
 
 To test these hypotheses, we perform a permutation test to assess the significance of the correlation coefficient between minutes and calories. This test will shuffle one of the variables while keeping the other fixed, thereby breaking any real association between them, and then compute the correlation coefficient for each permutation. This approach allows us to create a distribution of correlation coefficients under the null hypothesis that there's no association between preparation time and calorie content.
 
-Interpretation of the Results:
 The observed correlation coefficient between preparation time (minutes) and calorie content (calories) of recipes is approximately 0.005, suggesting a slight positive correlation. Given our analysis with a 90% significance level, we find a p-value of 0.024. This p-value indicates that the observed correlation is statistically significant at the 95% level, allowing us to reject the null hypothesis (H0) in favor of the alternative hypothesis (H1). Therefore, there is significant evidence to suggest a correlation between the preparation time of recipes and their calorie content.
 
 This result implies that recipes requiring longer preparation times might tend to have slightly higher caloric content, which could be due to various factors such as the complexity of the recipe, the number of ingredients used, or the cooking methods involved. It's important to note, however, that while the correlation is statistically significant, the strength of the association is relatively weak, as indicated by the correlation coefficient value.
 
 
 ## Framing a Prediction Problem
-
 Prediction Problem: The objective is to predict the average rating ('average_rating') that a recipe will receive. This is a regression problem because the response variable is continuous, ranging from the lowest to the highest possible rating.
 
 Response Variable: The response variable is 'average_rating'. It is chosen because it quantitatively reflects how well the recipes are received by users, which is the primary interest of this investigation.
@@ -62,7 +57,6 @@ Metric for Evaluation: For this project, we choose to use the Root Mean Squared 
 
 
 ## Baseline Model
-
 The Linear Regression model was trained to predict the average_rating of recipes based on two quantitative features: minutes and n_steps. These features represent the time required to prepare the recipe and the number of steps in the recipe, respectively. Both features were preprocessed with a StandardScaler to normalize their scale.
 
 The performance of the model is evaluated using the Root Mean Squared Error (RMSE), with a value of approximately 0.490. This metric indicates the average deviation of the predicted ratings from the actual ratings. An RMSE of 0.490 suggests that, on average, the model's predictions are less than half a rating point away from the actual ratings, which could be acceptable depending on the rating scale (typically 1 to 5). However, whether this is considered "good" can vary based on domain-specific thresholds for prediction accuracy.
@@ -71,11 +65,111 @@ The coefficients for the model are very small: approximately -0.000751 for minut
 
 Given the small coefficients and the RMSE value, while the model might serve as a basic benchmark, its predictive power is limited. It is likely not capturing all the nuances that contribute to a recipe's rating. For the model to be considered "good" in a practical sense, it would ideally need a lower RMSE, suggesting more accurate predictions, and more substantial coefficients for the features, indicating a clearer relationship between these features and the ratings. Further exploration with additional or different features, more complex models, and possibly feature engineering could lead to improved performance.
 
-
 ## Final Model
+The final model's performance indicates that it has been successfully fitted with a more complex algorithm (RandomForestRegressor) than the baseline model (which was presumably a simpler model, like Linear Regression). The RandomForestRegressor is an ensemble method that combines the predictions of several decision trees to improve generalizability and robustness over a single decision tree.
 
+The grid search process explored a range of values for n_estimators (the number of trees in the forest) and max_depth (the maximum depth of the trees). The best parameters indicated by the grid search are:
 
+max_depth: None (which means the trees are grown until all leaves are pure or contain less than min_samples_split samples)
+n_estimators: 200 (a larger number of trees in the forest, contributing to the ensemble's ability to model the data more accurately)
+The model achieved a Root Mean Squared Error (RMSE) of approximately 0.3504, which measures the average magnitude of the errors between the predicted values and the actual values. Lower values of RMSE indicate better fit.
+
+The features added were calories and total_fat, on top of the previously used minutes and n_steps. These were chosen because:
+
+Calories: This is a core nutritional metric that users may consider when rating a recipe, particularly in contexts where dietary preferences or restrictions are relevant (e.g., low-calorie diets).
+Total Fat: Similar to calories, the fat content of a recipe could significantly impact user preferences and, subsequently, their ratings, especially considering different health and wellness trends.
+These features are good for the prediction task because they directly relate to users' perceptions and decisions about food, which are likely factors in how they rate recipes. By capturing more aspects of the recipes that could influence user ratings, the model can make more informed predictions.
+
+The RandomForestRegressor was chosen because it's less likely to overfit than a single decision tree, is robust to noise, and can model non-linear relationships, which are common in real-world data. The hyperparameters were selected using a grid search with cross-validation, which is a systematic approach to testing different combinations of hyperparameters to find the one that performs best on unseen data.
+
+Comparing the final model's RMSE to the baseline model's RMSE would show an improvement if the baseline RMSE were higher than 0.3504. This would indicate that the final model predicts more accurately, likely due to both the additional features and the more complex modeling algorithm.
 
 ## Fairness Analysis
 
 Explain how you conducted a fairness analysis of your models. Discuss any biases identified and how you addressed them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
