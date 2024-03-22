@@ -86,8 +86,14 @@ The RandomForestRegressor was chosen because it's less likely to overfit than a 
 Comparing the final model's RMSE to the baseline model's RMSE would show an improvement if the baseline RMSE were higher than 0.3504. This would indicate that the final model predicts more accurately, likely due to both the additional features and the more complex modeling algorithm.
 
 ## Fairness Analysis
+We define Group X as recipes with low-calorie content and Group Y as recipes with high-calorie content. We evaluate the model's performance using the Root Mean Squared Error (RMSE) metric, which measures the average difference between predicted and actual ratings.
 
-Explain how you conducted a fairness analysis of your models. Discuss any biases identified and how you addressed them.
+Our null hypothesis asserts that the model performs similarly for both groups, and any observed differences are due to random chance. Conversely, the alternative hypothesis posits that there is a significant difference in the model's performance between low-calorie and high-calorie recipes, indicating potential bias.
+
+Test Statistic and Significance Level:
+The observed difference in RMSE between the two groups is calculated as 0.022. We conduct a permutation test with a significance level (α) set at 0.05, representing a 5% chance of rejecting the null hypothesis when it is true.
+
+With a resulting p-value of 0.01, which is less than the significance level, we reject the null hypothesis. This indicates strong evidence of a significant difference in model performance between low-calorie and high-calorie recipes. Thus, we conclude that the model may exhibit bias in its predictions based on calorie content, requiring further investigation and potential adjustments to ensure fair and accurate predictions for all recipe types.
 
 
 
