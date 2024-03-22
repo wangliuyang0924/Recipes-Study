@@ -35,6 +35,8 @@ Following the nutritional data transformation, the cleaned and enhanced recipes 
 
 
 ### Explarotory Data Anaylsis
+![Alt text](/newplot.png)
+
 | rating_category | calories | minutes | n_ingredients | total_fat |
 |:----------------|---------:|--------:|--------------:|----------:|
 | Low             |  468.513 | 98.9261 |       9.05613 |   35.1172 |
