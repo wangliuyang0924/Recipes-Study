@@ -119,7 +119,7 @@ These features are good for the prediction task because they directly relate to 
 
 The RandomForestRegressor was chosen because it's less likely to overfit than a single decision tree, is robust to noise, and can model non-linear relationships, which are common in real-world data. The hyperparameters were selected using a grid search with cross-validation, which is a systematic approach to testing different combinations of hyperparameters to find the one that performs best on unseen data.
 
-Comparing the final model's RMSE to the baseline model's RMSE would show an improvement if the baseline RMSE were higher than 0.3504. This would indicate that the final model predicts more accurately, likely due to both the additional features and the more complex modeling algorithm.
+Comparing the final model's RMSE to the baseline model's RMSE show an improvement since the RMSE is 0.35, which is higher than 0.49, the RMSE from the baseline model. This indicates that the final model predicts more accurately, likely due to both the additional features and the more complex modeling algorithm.
 
 ## Fairness Analysis
 We define Group X as recipes with low-calorie content and Group Y as recipes with high-calorie content. We evaluate the model's performance using the Root Mean Squared Error (RMSE) metric, which measures the average difference between predicted and actual ratings.
