@@ -24,15 +24,14 @@ n_ingredients: The number of ingredients in a recipe, affecting its appeal.
 ingredients: The specific ingredients used, to see if certain ingredients are more common in higher-rated recipes.
 
 ## Data Cleaning and Exploratory Data Analysis
-
 ### Data Cleaning
 Describe how you cleaned and prepared your data for analysis. Include any exploratory data analysis (EDA) you performed with findings.
 ### Explarotory Data Anaylsis
 
 
 ## Assessment of Missingness
-
-Discuss how you assessed the missingness in your data. Explain the methods used to handle missing data and justify your choices.
+### NMAR Analysis
+Missing 'descriptions' could be NMAR if the missingness relates to the content or nature of the recipes themselves. For example, simpler recipes or those that are widely known may not have a description because the contributor assumes that users are already familiar with the dish. In this case, the missingness is related to the nature of the recipe, which is not observed in the data. Additional data that might help explain the missingness and thereby making it MAR could include the complexity level of the recipe or a categorization of the recipe's commonality/uniqueness.
 
 ## Hypothesis Testing
 
