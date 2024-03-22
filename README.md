@@ -37,6 +37,7 @@ Following the nutritional data transformation, the cleaned and enhanced recipes 
 ### Explarotory Data Anaylsis
 #### Univariate Analysis
 ![Alt text](/2.1.png)
+![Alt text](/2.2.png)
 
 #### Bivariate Analysis
 ![Alt text](/newplot.png)
