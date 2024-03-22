@@ -36,7 +36,10 @@ Following the nutritional data transformation, the cleaned and enhanced recipes 
 
 ### Explarotory Data Anaylsis
 #### Univariate Analysis
-![Alt text](/newplot(4).png)
+<html>
+<head><meta charset="utf-8" /></head>
+<body>
+    <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
 
 #### Bivariate Analysis
 ![Alt text](/newplot.png)
