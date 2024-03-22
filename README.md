@@ -41,6 +41,7 @@ Following the nutritional data transformation, the cleaned and enhanced recipes 
 
 #### Bivariate Analysis
 ![Alt text](/newplot.png)
+![Alt text](/2.3.png)
 
 #### Interesting Aggregate
 | rating_category | calories | minutes | n_ingredients | total_fat |
