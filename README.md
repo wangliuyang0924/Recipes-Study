@@ -26,10 +26,12 @@ ingredients: The specific ingredients used, to see if certain ingredients are mo
 The data cleaning process involved merging the recipe and interactions datasets based on a common identifier, replacing zero ratings with NaN to handle missing or invalid data, calculating the average rating per recipe to gauge overall recipe popularity and quality, converting string representations of nutritional information into structured data for easier analysis, updating the merged dataset to reflect the latest changes, standardizing date columns to datetime format for temporal analysis, and conducting a comprehensive check for missing values and data types to ensure data integrity and reliability. These steps collectively aimed to prepare the dataset for subsequent analyses by addressing data quality issues and ensuring consistency, ultimately facilitating more accurate and meaningful insights.
 
 ### Explarotory Data Anaylsis
-<html>
-<head><meta charset="utf-8" /></head>
-<body>
-    <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+<iframe
+  src="2.1.html"
+  width="800"
+  height="600"
+  frameborder="0"
+></iframe>
 
 ## Assessment of Missingness
 ### NMAR Analysis
