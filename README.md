@@ -36,11 +36,20 @@ Following the nutritional data transformation, the cleaned and enhanced recipes 
 
 ### Explarotory Data Anaylsis
 #### Univariate Analysis
+Average ratings across recipes predominantly cluster at the upper end of the scale, with a pronounced peak at the perfect score of 5. This trend suggests users generally leave high ratings, with fewer recipes falling into the lower-rated categories. The inclination towards higher ratings could indicate user rating bias or a collection of particularly well-received recipes in the dataset.
+
 ![Alt text](/2.1.png)
+The number of steps in the recipes is mostly concentrated at the lower end of the scale, indicating that recipes requiring fewer steps are more common. There is a sharp decline in the frequency of recipes as the number of steps increases, showcasing a user preference or dataset representation leaning towards simpler, less complex recipes.
+
 ![Alt text](/2.2.png)
 
+
 #### Bivariate Analysis
+Looking at the number of ingredients, there is a consistent pattern across all rating categories, with no significant difference in the median number of ingredients between higher and lower-rated recipes. The spread of ingredient counts is comparable across the board, which implies that the quantity of ingredients does not play a major role in the ratings a recipe receives. This points to the importance of other factors, perhaps the type or quality of ingredients, in influencing user ratings.
+
 ![Alt text](/newplot.png)
+
+The distribution of the number of steps within each rating category reveals that there isn't a straightforward relationship between recipe complexity and user ratings. While medium-rated recipes show a marginally higher median number of steps, the overall distribution suggests that users' ratings do not consistently favor either more or less complex recipes. This underscores the likelihood that users consider a multitude of factors beyond the simplicity or complexity when assessing recipes.
 ![Alt text](/2.3.png)
 
 #### Interesting Aggregate
