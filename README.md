@@ -35,8 +35,13 @@ Following the nutritional data transformation, the cleaned and enhanced recipes 
 
 
 ### Explarotory Data Anaylsis
+#### Univariate Analysis
+![Alt text](/newplot(4).png)
+![Alt text](/newplot(5).png)
+#### Bivariate Analysis
 ![Alt text](/newplot.png)
-
+![Alt text](/newplot(1).png)
+#### Interesting Aggregate
 | rating_category | calories | minutes | n_ingredients | total_fat |
 |:----------------|---------:|--------:|--------------:|----------:|
 | Low             |  468.513 | 98.9261 |       9.05613 |   35.1172 |
@@ -49,8 +54,10 @@ Following the nutritional data transformation, the cleaned and enhanced recipes 
 Missing 'descriptions' could be NMAR if the missingness relates to the content or nature of the recipes themselves. For example, simpler recipes or those that are widely known may not have a description because the contributor assumes that users are already familiar with the dish. In this case, the missingness is related to the nature of the recipe, which is not observed in the data. Additional data that might help explain the missingness and thereby making it MAR could include the complexity level of the recipe or a categorization of the recipe's commonality/uniqueness.
 ### Missingness Dependency
 Assuming a 90% significance level for interpreting the results of our permutation tests related to the missingness of the description column in your dataset, the findings present a nuanced perspective. For the rating column, where we observed a p-value of 0.058, this value falls below the 90% confidence threshold (equivalent to a significance level of 0.10). This suggests that at a 90% confidence level, there is a statistically significant dependency of description missingness on the recipe ratings. Specifically, the negative observed difference implies that recipes with slightly lower ratings are more likely to be missing descriptions, indicating that user engagement or perceived quality (as inferred from ratings) might influence the completeness of the recipe's metadata, including the presence of descriptions.
+![Alt text](/newplot(2).png)
 
 Conversely, the permutation test for the minutes column resulted in a p-value of 0.408, which is well above the 0.10 threshold, indicating no significant dependency of description missingness on the preparation time of the recipes. Despite the intuitive expectation that more complex or time-consuming recipes (with longer preparation times) might be more likely to include detailed descriptions, the statistical analysis does not support this hypothesis at the 90% confidence level.
+![Alt text](/newplot(3).png)
 
 In summary, adopting a 90% significance level allows us to discern a subtle pattern where the presence of ratings (and possibly their values) influences whether a recipe includes a description, while the preparation time does not.
 
