@@ -36,10 +36,7 @@ Following the nutritional data transformation, the cleaned and enhanced recipes 
 
 ### Explarotory Data Anaylsis
 #### Univariate Analysis
-<html>
-<head><meta charset="utf-8" /></head>
-<body>
-    <div>                        <script type="text/javascript">window.PlotlyConfig = {MathJaxConfig: 'local'};</script>
+![Alt text](/2.1.png)
 
 #### Bivariate Analysis
 ![Alt text](/newplot.png)
@@ -120,89 +117,3 @@ Test Statistic and Significance Level:
 The observed difference in RMSE between the two groups is calculated as 0.022. We conduct a permutation test with a significance level (α) set at 0.05, representing a 5% chance of rejecting the null hypothesis when it is true.
 
 With a resulting p-value of 0.01, which is less than the significance level, we reject the null hypothesis. This indicates strong evidence of a significant difference in model performance between low-calorie and high-calorie recipes. Thus, we conclude that the model may exhibit bias in its predictions based on calorie content, requiring further investigation and potential adjustments to ensure fair and accurate predictions for all recipe types.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
