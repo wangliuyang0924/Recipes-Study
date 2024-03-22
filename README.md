@@ -29,6 +29,7 @@ ingredients: The specific ingredients used, to see if certain ingredients are mo
 Describe how you cleaned and prepared your data for analysis. Include any exploratory data analysis (EDA) you performed with findings.
 ### Explarotory Data Anaylsis
 
+
 ## Assessment of Missingness
 
 Discuss how you assessed the missingness in your data. Explain the methods used to handle missing data and justify your choices.
