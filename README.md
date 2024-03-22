@@ -2,7 +2,6 @@
 Liuyang Wang
 
 ## Introduction
-
 Our investigation revolves around the intriguing question: What common features are associated with the highest-rated recipes? This question seeks to explore various aspects of recipes, such as the number of ingredients, preparation time, nutritional values, and specific ingredients, to determine their impact on a recipe's rating.
 
 This inquiry holds significance for several reasons:
@@ -24,14 +23,10 @@ ingredients: The specific ingredients used, to see if certain ingredients are mo
 
 ## Data Cleaning and Exploratory Data Analysis
 ### Data Cleaning
-Describe how you cleaned and prepared your data for analysis. Include any exploratory data analysis (EDA) you performed with findings.
+The data cleaning process involved merging the recipe and interactions datasets based on a common identifier, replacing zero ratings with NaN to handle missing or invalid data, calculating the average rating per recipe to gauge overall recipe popularity and quality, converting string representations of nutritional information into structured data for easier analysis, updating the merged dataset to reflect the latest changes, standardizing date columns to datetime format for temporal analysis, and conducting a comprehensive check for missing values and data types to ensure data integrity and reliability. These steps collectively aimed to prepare the dataset for subsequent analyses by addressing data quality issues and ensuring consistency, ultimately facilitating more accurate and meaningful insights.
+
 ### Explarotory Data Anaylsis
-<iframe
-  src="2.1.html"
-  width="800"
-  height="600"
-  frameborder="0"
-></iframe>
+Due to technical issues, I cannot load the plots into the markdown. Please refer to 2.1-2.4 in the repo for the univariate and bivariate anaylysis.
 
 ## Assessment of Missingness
 ### NMAR Analysis
