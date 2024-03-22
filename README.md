@@ -54,15 +54,27 @@ This result implies that recipes requiring longer preparation times might tend t
 
 ## Framing a Prediction Problem
 
-Explain how you framed the prediction problem within your project. Describe the target variable and the features used for prediction.
+Prediction Problem: The objective is to predict the average rating ('average_rating') that a recipe will receive. This is a regression problem because the response variable is continuous, ranging from the lowest to the highest possible rating.
+
+Response Variable: The response variable is 'average_rating'. It is chosen because it quantitatively reflects how well the recipes are received by users, which is the primary interest of this investigation.
+
+Metric for Evaluation: For this project, we choose to use the Root Mean Squared Error (RMSE), which is the square root of the MSE. It is useful because it scales the error to be on the same unit as the response variable and gives a relatively high weight to large errors. This means that improving the RMSE by a small amount could imply significant improvements in model performance.
+
 
 ## Baseline Model
 
-Describe the baseline model you used for comparison. Include information on how it was implemented and its performance metrics.
+The Linear Regression model was trained to predict the average_rating of recipes based on two quantitative features: minutes and n_steps. These features represent the time required to prepare the recipe and the number of steps in the recipe, respectively. Both features were preprocessed with a StandardScaler to normalize their scale.
+
+The performance of the model is evaluated using the Root Mean Squared Error (RMSE), with a value of approximately 0.490. This metric indicates the average deviation of the predicted ratings from the actual ratings. An RMSE of 0.490 suggests that, on average, the model's predictions are less than half a rating point away from the actual ratings, which could be acceptable depending on the rating scale (typically 1 to 5). However, whether this is considered "good" can vary based on domain-specific thresholds for prediction accuracy.
+
+The coefficients for the model are very small: approximately -0.000751 for minutes and -0.000366 for n_steps, with a y-intercept of about 4.676. The small magnitude of the coefficients suggests that changes in the number of minutes and steps have a very slight impact on the predicted ratings. In practical terms, this could mean that these features do not have a strong influence on how users rate the recipes, or it might indicate that other features not included in the model could have a more significant impact on the ratings.
+
+Given the small coefficients and the RMSE value, while the model might serve as a basic benchmark, its predictive power is limited. It is likely not capturing all the nuances that contribute to a recipe's rating. For the model to be considered "good" in a practical sense, it would ideally need a lower RMSE, suggesting more accurate predictions, and more substantial coefficients for the features, indicating a clearer relationship between these features and the ratings. Further exploration with additional or different features, more complex models, and possibly feature engineering could lead to improved performance.
+
 
 ## Final Model
 
-Provide details about your final model. Discuss why it was chosen, its architecture, and how it improves upon the baseline model. Include performance metrics.
+
 
 ## Fairness Analysis
 
