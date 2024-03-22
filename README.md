@@ -25,7 +25,9 @@ ingredients: The specific ingredients used, to see if certain ingredients are mo
 
 ## Data Cleaning and Exploratory Data Analysis
 
+### Data Cleaning
 Describe how you cleaned and prepared your data for analysis. Include any exploratory data analysis (EDA) you performed with findings.
+### Explarotory Data Anaylsis
 
 ## Assessment of Missingness
 
