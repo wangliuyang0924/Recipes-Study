@@ -1,5 +1,23 @@
 # Recipes Study
-This is the Project 4 for DSC80 winter 2024
+Our investigation revolves around the intriguing question: What common features are associated with the highest-rated recipes? This question seeks to explore various aspects of recipes, such as the number of ingredients, preparation time, nutritional values, and specific ingredients, to determine their impact on a recipe's rating.
+
+This inquiry holds significance for several reasons:
+Culinary Enthusiasts and Home Cooks: Understanding the traits of highly rated recipes can inspire cooks to experiment with new recipes or tweak existing ones for better outcomes.
+Food Industry Professionals: Insights from this analysis can guide menu planning, recipe development, and marketing strategies.
+Nutrition and Health: Analyzing the nutritional aspects of top-rated recipes can offer valuable information for those interested in healthy eating.
+
+The datasets consist of the following:
+RAW_interactions.csv has 731,927 rows and 5 columns, containing the information of all recipes. RAW_recipes.csv has 83,782 rows and 12 columns, containing contains reviews and ratings submitted for the recipes in RAW_recipes.csv.
+
+For the purpose of our investigation, the following columns are particularly relevant:
+Relevant Columns:
+recipe_id: Links recipes with their reviews and ratings.
+rating: Represents the average rating a recipe has received from users, crucial for identifying highly rated recipes.
+minutes: The time required to prepare the recipe, which could influence its popularity.
+nutrition: Details nutritional information, potentially correlating with higher ratings.
+n_ingredients: The number of ingredients in a recipe, affecting its appeal.
+ingredients: The specific ingredients used, to see if certain ingredients are more common in higher-rated recipes.
+
 
 ## Introduction
 
