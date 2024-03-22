@@ -1,4 +1,5 @@
-# Recipes Study
+# The Impact of Nutritional Values on Recipe Popularity
+Liuyang Wang
 
 ## Introduction
 
