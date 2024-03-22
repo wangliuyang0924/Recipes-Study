@@ -1,4 +1,9 @@
 # Recipes Study
+
+
+
+## Introduction
+
 Our investigation revolves around the intriguing question: What common features are associated with the highest-rated recipes? This question seeks to explore various aspects of recipes, such as the number of ingredients, preparation time, nutritional values, and specific ingredients, to determine their impact on a recipe's rating.
 
 This inquiry holds significance for several reasons:
@@ -17,11 +22,6 @@ minutes: The time required to prepare the recipe, which could influence its popu
 nutrition: Details nutritional information, potentially correlating with higher ratings.
 n_ingredients: The number of ingredients in a recipe, affecting its appeal.
 ingredients: The specific ingredients used, to see if certain ingredients are more common in higher-rated recipes.
-
-
-## Introduction
-
-Provide an overview of your project here. Explain the purpose of the project and any relevant background information.
 
 ## Data Cleaning and Exploratory Data Analysis
 
